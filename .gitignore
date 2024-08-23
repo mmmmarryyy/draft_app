@@ -3,3 +3,4 @@
 *.csr
 *.key
 *.srl
+*.DS_Store
