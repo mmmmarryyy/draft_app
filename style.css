@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+  }
+  form {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 3vw 1fr;
+  }
+  label {
+    font-weight: bold;
+    grid-column: 1 / -1;
+  }
+  input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    grid-column: 1 / 3;
+    margin-bottom: 10px;
+  }
+  select {
+    width: 70px;
+    margin-bottom: 10px;
+  }
+  textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    resize: none;
+    grid-column: 1 / -1;
+  }
+  input[type="radio"],
+  input[type="checkbox"] {
+    grid-column: 1 / 2;
+  }
+  input[type="radio"] + label,
+  input[type="checkbox"] + label {
+    font-weight: normal;
+    font-size: 11pt;
+    grid-column: 2 / -1;
+  }
+  input[type="color"] {
+    width: 70px;
+    height: 40px;
+    grid-column: 1 / 2;
+  }
+  input[type="file"] {
+    width: 200px;
+    height: 30px;
+  }
+  input[type="submit"], input[type="reset"], input[type="number"], input[type="range"] {
+    width: 300px;
+  }
+  input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #45a049;
+  }
+  .button-group {
+    margin: 3vh 3vw;
+  }
